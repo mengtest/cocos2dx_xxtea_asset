@@ -75,7 +75,7 @@ static void parse_opts(opts_holder *cf, int argc, char **argv) {
 		usage();
 
 	//输入和输出都不可以为空
-	if (strlen(cf->input) && strlen(cf->output))
+	if (strlen(cf->input) == 0 || strlen(cf->output) == 0)
 		usage();
 }
 
@@ -118,6 +118,8 @@ static int read_file(const char* inputf,char **out) {
 	}
 
 	fclose(f);
+
+	*out = p;
 	return total;
 }
 
