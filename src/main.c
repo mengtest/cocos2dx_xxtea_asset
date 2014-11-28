@@ -26,10 +26,10 @@ static void usage(void) {
 		"\n"
 		"  -e [lua script|*.jpg]  encode file \n"
 		"  -d <lua script|*.jpg>  decode file \n"
-		"  -i input file "
-		"  -o output file "
-		"  -s set xxteaSign_string "
-		"  -k set xxtea_key_string "
+		"  -i input file \n"
+		"  -o output file \n"
+		"  -s set xxteaSign_string \n"
+		"  -k set xxtea_key_string \n"
 		"  -h                     Show this help message.\n"		
 		"",
 		progname);
